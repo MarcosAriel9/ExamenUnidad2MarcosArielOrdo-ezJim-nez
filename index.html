@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/Netflix_icon.svg.png" type="image/x-icon">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Examen Unidad 2</title>
+
+</head>
+
+<body class="bg-dark">
+    <header>
+        <div class=" text-center ">
+            <h2>Examen Unidad 2 Marcos Ariel Ordoñez Jiménez </h2>
+        </div>
+        <!-- Image and text -->
+        <nav class="navbar  navbar-expand-lg navbar-light shadow   " style="background-color: rgb(20, 18, 18);">
+            <a class="navbar-brand text-white" href="#">
+
+                <img src="./assets/img/Netflix_icon.svg.png" width="30" height="30" class="d-inline-block align-top "
+                    alt="">
+                Netflix
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contenido
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#accion">Peliculas</a>
+                            <a class="dropdown-item" href="#series">Series</a>
+
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0"method="POST ">
+                    <input id="busc"class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="mensaje()">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <section class="container-fluid" id="inicio">
+        <div id="carouselExampleControls" class="carousel slide video " data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <video class="video" autoplay muted controls>
+                        <source
+                            src="./assets/video/y2mate.com - Loki I Marvel Studios  Tráiler Oficial Doblado_v240P.mp4"
+                            class="d-block w-100" alt="...">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video class="video" autoplay muted controls>
+                        <source src="./assets/video/y2mate.com - Eternos  Marvel Studios  Teaser Tráiler_v240P.mp4"
+                            class="d-block w-100" alt="">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video class="video" autoplay muted controls>
+                        <source
+                            src="./assets/video/y2mate.com - Shang Chi and The Legend of the Ten Rings  Marvel Studios  Trailer doblado_v240P.mp4"
+                            class="d-block w-100" alt="...">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" text-white">
+        <div class="card text-center bg-secondary " id="accion">
+            <div class="card-header">
+                Acción
+            </div>
+        </div>
+        <br>
+        <article class="container-fluid text-center">
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <a class="active bg-dark" data-toggle="modal" data-target="#exampleModal" ><figure>
+                        <img  class="imagen img-fluid"src="./assets/img/1601498876_582320_1601498920_noticia_normal.jpg" alt="">
+                    </figure>
+                    <h4>Spider-man</h4>
+                </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Spider-man</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body text-dark">
+                          
+                              <img style="width:200px ;"src="./assets/img/1601498876_582320_1601498920_noticia_normal.jpg" alt="">
+                              <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. </p>
+                        <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+                        <br>
+                        <hr>
+                        <button type="button"data-feather="play"></button>
+                            </div>
+                        <div class="modal-footer  align-items-center">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <a class="active bg-dark" data-toggle="modal" data-target="#exampleModal2" ><figure>
+                        <img class="imagen img-fluid"src="./assets/img/_106090984_2e39b218-c369-452e-b5be-d2476f9d8728.jpg" alt="">
+                    </figure>
+                    <h4>Avengers End game</h4>
+                </a>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">Avengers End game</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-dark">
+                              
+                                  <img style="width:200px ;"src="./assets/img/_106090984_2e39b218-c369-452e-b5be-d2476f9d8728.jpg" alt="">
+                                  <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. </p>
+                            <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+                            <br>
+                            <hr>
+                            <button type="button"data-feather="play"></button>
+                                </div>
+                            <div class="modal-footer  align-items-center">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <a class="active bg-dark" data-toggle="modal" data-target="#exampleModal3" ><figure>
+                        <img class="imagen img-fluid" src="./assets/img/840_560.jpg" alt="">
+                    </figure>
+                    <h4>Batman</h4>
+                </a>
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">Batman</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-dark">
+                              
+                                  <img style="width:200px ;"src="./assets/img/840_560.jpg" alt="">
+                                  <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. </p>
+                            <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+                            <br>
+                            <hr>
+                            <button type="button"data-feather="play"></button>
+                                </div>
+                            <div class="modal-footer  align-items-center">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <a class="active bg-dark" data-toggle="modal" data-target="#exampleModal4" ><figure>
+                        <img class="imagen img-fluid" src="./assets/img/descarga.jpg" alt="">
+                    </figure>
+                    <h4>Black Widow</h4>
+                </a>
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">Black Widow</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-dark">
+                              
+                                  <img style="width:200px ;"src="./assets/img/descarga.jpg" alt="">
+                                  <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. </p>
+                            <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+                            <br>
+                            <hr>
+                            <button type="button"data-feather="play"></button>
+                                </div>
+                            <div class="modal-footer  align-items-center">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                 <div class="col-12 col-md-6 col-lg-4 ">
+                    <a class="active bg-dark" data-toggle="modal" data-target="#exampleModal5" ><figure>
+                        <img class="imagen img-fluid" src="./assets/img/Big-Bang-Theory-1.jpg" alt="">
+                    </figure>
+                    <h4>big bang theory</h4>
+                </a>
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">big bang theory</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-dark">
+                              
+                                  <img style="width:200px ;"src="./assets/img/Big-Bang-Theory-1.jpg" alt="">
+                                  <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. </p>
+                            <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+                            <br>
+                            <hr>
+                            <button type="button"data-feather="play"></button>
+                                </div>
+                            <div class="modal-footer  align-items-center">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <a class="active bg-dark" data-toggle="modal" data-target="#exampleModal6" ><figure>
+                        <img class="imagen img-fluid" src="./assets/img/descarga (3).jpg" alt="">
+                    </figure>
+                    <h4>Falcon y el soldado del invierno</h4>
+                </a>
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">Spider-man</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-dark">
+                              
+                                  <img style="width:200px ;"src="./assets/img/descarga (3).jpg" alt="">
+                                  <p>Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. </p>
+                            <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+                            <br>
+                            <hr>
+                            <button type="button"data-feather="play"></button>
+                                </div>
+                            <div class="modal-footer  align-items-center">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+
+            </div>
+        </article>
+        <div class="card text-center bg-primary text-white" id="series">
+            <div class="card-header">
+                Series
+            </div>
+        </div>
+            <br>
+        <article class="container-fluid text-center">
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <figure>
+                        <img  class="imagen img-fluid"src="./assets/img/descarga (1).jpg" alt="">
+                    </figure>
+                    <h4>loki</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <figure>
+                        <img class="imagen img-fluid"src="./assets/img/descarga (2).jpg" alt="">
+                    </figure>
+                    <h4>wandavision</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <figure>
+                        <img class="imagen img-fluid" src="./assets/img/Big-Bang-Theory-1.jpg" alt="">
+                    </figure>
+                    <h4>big bang theory</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <figure>
+                        <img class="imagen img-fluid" src="./assets/img/descarga (3).jpg" alt="">
+                    </figure>
+                    <h4>Falcon y el soldado del invierno</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <figure>
+                        <img class="imagen img-fluid" src="./assets/img/Big-Bang-Theory-1.jpg" alt="">
+                    </figure>
+                    <h4>big bang theory</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <figure>
+                        <img class="imagen img-fluid" src="./assets/img/descarga (3).jpg" alt="">
+                    </figure>
+                    <h4>Falcon y el soldado del invierno</h4>
+                </div>
+
+
+            
+        </article>
+
+    </section>
+
+    <aside></aside>
+<footer class="">
+    <div class="card bg-dark text-white">
+    <div class="card-header ">
+      contactanos
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+        <script>
+            feather.replace()
+          </script>
+         
+</body>
